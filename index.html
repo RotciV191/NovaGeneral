@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171714" />
+    <meta
+      name="description"
+      content="NOVA General Contractor LLC provides interior and exterior renovation services. Fully insured and bonded. Request a free estimate."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NOVA General Contractor LLC | Interior & Exterior Renovation" />
+    <meta
+      property="og:description"
+      content="Interior and exterior renovation. Fully insured and bonded. Request a free estimate from NOVA General Contractor LLC."
+    />
+    <meta property="og:locale" content="en_US" />
+    <title>NOVA General Contractor LLC | Interior &amp; Exterior Renovation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="NOVA General Contractor LLC home">
+          <span class="brand-name">NOVA</span>
+          <span class="brand-subtitle">General Contractor LLC</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="phone-link" href="tel:+14253435456" aria-label="Call NOVA at 425 343 5456">
+            <span class="phone-link-desktop">(425) 343-5456</span>
+            <span class="phone-link-mobile">Call</span>
+          </a>
+          <a class="button button-small header-estimate" href="#estimate"><span>Free&nbsp;</span>estimate</a>
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-navigation"
+            aria-label="Open navigation"
+            data-menu-button
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" data-mobile-nav hidden>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Interior &amp; Exterior Renovation</p>
+          <h1 id="hero-title">Renovation built around your space.</h1>
+          <p class="hero-intro">
+            NOVA General Contractor LLC provides interior and exterior renovation services.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#estimate">Get a free estimate</a>
+            <a class="text-link" href="#projects">View projects <span aria-hidden="true">↘</span></a>
+          </div>
+          <p class="credential"><span aria-hidden="true"></span> Fully Insured &amp; Bonded</p>
+        </div>
+
+        <!-- Temporary presentation photography. Replace with approved NOVA photography before launch. -->
+        <figure class="feature-media hero-media">
+          <img
+            src="assets/images/hero-kitchen.jpg"
+            alt="Bright contemporary kitchen with white cabinetry, a large island, and natural light"
+            width="1800"
+            height="1200"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </figure>
+      </section>
+
+      <section class="section services-section" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Our services</p>
+          <h2 id="services-title">A focused approach to renovation.</h2>
+        </div>
+
+        <div class="services-layout">
+          <div class="service-panel">
+            <div class="service-list" role="tablist" aria-label="Renovation services" data-service-list></div>
+            <div class="service-summary" aria-live="polite">
+              <p class="service-count" data-service-count>01 / 07</p>
+              <h3 data-service-title>Kitchen Remodeling</h3>
+              <p data-service-description>
+                Kitchen renovation options can be discussed and scoped during your estimate.
+              </p>
+              <a class="service-link" href="#estimate">Discuss your project <span aria-hidden="true">↘</span></a>
+            </div>
+          </div>
+
+          <!-- Temporary presentation photography. The selected image changes with the service tabs. -->
+          <figure class="feature-media service-media" data-service-media>
+            <img
+              src="assets/images/service-kitchen.jpg"
+              alt="Remodeled kitchen with white cabinetry, stone island, and pendant lighting"
+              width="1800"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+              data-service-image
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="projects-heading-row">
+          <div class="section-heading">
+            <p class="eyebrow">Project gallery</p>
+            <h2 id="projects-title">Projects</h2>
+          </div>
+          <p class="section-note">
+            Three renovation categories presented through a clear, image-led approach.
+          </p>
+        </div>
+
+        <div class="project-filters" aria-label="Filter projects" data-project-filters hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="kitchen" aria-pressed="false">Kitchen</button>
+          <button type="button" data-filter="bathroom" aria-pressed="false">Bathroom</button>
+          <button type="button" data-filter="interior" aria-pressed="false">Interior</button>
+          <button type="button" data-filter="exterior" aria-pressed="false">Exterior</button>
+        </div>
+
+        <!-- Temporary presentation photography. Do not publish as NOVA's completed work. -->
+        <div class="projects-grid" data-project-grid></div>
+
+        <div class="section-action">
+          <button class="text-link text-link-button" type="button" data-view-projects>
+            View all projects <span aria-hidden="true">↘</span>
+          </button>
+        </div>
+
+        <dialog class="project-dialog" data-project-dialog aria-labelledby="project-dialog-title">
+          <div class="project-dialog-header">
+            <div>
+              <p class="eyebrow">Project gallery</p>
+              <h2 id="project-dialog-title">Renovation categories</h2>
+            </div>
+            <button type="button" aria-label="Close project gallery" data-project-dialog-close>Close</button>
+          </div>
+          <div class="project-dialog-grid" data-project-dialog-grid></div>
+        </dialog>
+      </section>
+
+      <section class="section why-section" id="about" aria-labelledby="why-title">
+        <div class="why-intro">
+          <p class="eyebrow">Why NOVA</p>
+          <h2 id="why-title">The essentials, clearly stated.</h2>
+          <p>
+            NOVA General Contractor LLC is fully insured and bonded. The focus stays on the project, the details, and direct communication.
+          </p>
+        </div>
+
+        <ol class="principles" aria-label="NOVA qualities">
+          <li><span>01</span><strong>Fully Insured</strong></li>
+          <li><span>02</span><strong>Bonded</strong></li>
+          <li><span>03</span><strong>Quality Work</strong></li>
+          <li><span>04</span><strong>Clear Communication</strong></li>
+        </ol>
+      </section>
+
+      <section class="estimate-section" id="estimate" aria-labelledby="estimate-title">
+        <div class="estimate-intro">
+          <p class="eyebrow">Start a conversation</p>
+          <h2 id="estimate-title">Get your free estimate.</h2>
+          <p>Tell us what you are planning and how you would prefer to be contacted.</p>
+          <p class="prefer-call">
+            Prefer to call?
+            <a href="tel:+14253435456">(425) 343-5456</a>
+          </p>
+        </div>
+
+        <form class="estimate-form" data-estimate-form novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
+              <input id="full-name" name="fullName" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone <span aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="field">
+              <label for="project-type">Project Type <span aria-hidden="true">*</span></label>
+              <select id="project-type" name="projectType" required>
+                <option value="">Select a project type</option>
+                <option>Kitchen Remodeling</option>
+                <option>Bathroom Remodeling</option>
+                <option>Interior Renovation</option>
+                <option>Exterior Renovation</option>
+                <option>Flooring</option>
+                <option>Painting</option>
+                <option>Repairs &amp; Improvements</option>
+                <option>Other / Not sure</option>
+              </select>
+            </div>
+
+            <div class="field field-full">
+              <label for="location">City / Address <span aria-hidden="true">*</span></label>
+              <input id="location" name="location" type="text" autocomplete="street-address" required />
+            </div>
+
+            <fieldset class="field field-full contact-method">
+              <legend>Preferred Contact Method <span aria-hidden="true">*</span></legend>
+              <label><input id="contact-phone" type="radio" name="contactMethod" value="Phone" required /> Phone</label>
+              <label><input id="contact-text" type="radio" name="contactMethod" value="Text" /> Text</label>
+              <label><input id="contact-email" type="radio" name="contactMethod" value="Email" /> Email</label>
+            </fieldset>
+
+            <div class="field field-full">
+              <label for="description">Project Description <span aria-hidden="true">*</span></label>
+              <textarea id="description" name="description" rows="5" required></textarea>
+            </div>
+
+            <div class="field field-full">
+              <label for="photos">Upload Project Photos <span class="optional">Optional</span></label>
+              <label class="file-input" for="photos">
+                <span>Choose photos</span>
+                <small data-file-summary>JPG, PNG or WEBP · Multiple files allowed</small>
+              </label>
+              <input id="photos" name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple data-file-input />
+            </div>
+          </div>
+
+          <p class="form-notice">
+            Your information will only be used to respond to your estimate request.
+          </p>
+          <button class="button form-submit" type="submit">Request free estimate</button>
+          <p class="form-status" role="status" data-form-status></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#top">
+          <span class="brand-name">NOVA</span>
+          <span class="brand-subtitle">General Contractor LLC</span>
+        </a>
+        <p>Interior and Exterior Renovation</p>
+        <p>Fully Insured &amp; Bonded</p>
+      </div>
+
+      <address class="footer-contact">
+        <p>Contact</p>
+        <a href="tel:+14253435456">(425) 343-5456</a>
+        <a href="mailto:novagenerallnv@gmail.com">novagenerallnv@gmail.com</a>
+      </address>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> NOVA General Contractor LLC</p>
+      </div>
+    </footer>
+  </body>
+</html>
